@@ -1,0 +1,45 @@
+.i-linkedin {
+  @include icon($linkedin);
+}
+
+.i-github {
+  @include icon($github5);
+}
+
+.i-steam {
+  @include icon($steam2);
+}
+
+.i-twitter {
+  @include icon($twitter2);
+}
+
+.i-facebook {
+  @include icon($facebook2);
+}
+
+.i-arrow-left {
+  @include icon($arrow-left);
+}
+
+.i-arrow-right {
+  @include icon($arrow-right2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin-bottom: $spacing-unit/4;
+}
+
+p {
+  margin-bottom: $spacing-unit/2;
+}
+
+a {
+  color: $c--dark-green;
+}
+
+a:hover,
+a:focus {
+  color: $c--bright-green;
+}

@@ -1,0 +1,96 @@
+.sidebar {
+
+  background-color: $c--black;
+  text-align: center;
+  padding-bottom: $spacing-unit;
+
+  @include mq($from: desktop) {
+    min-height: 877px;
+    width: 320px;
+  }
+
+  .sidebar__logo {
+    height: 280px;
+    width: 280px;
+    margin-top: $spacing-unit;
+  }
+
+  .sidebar__title {
+    color: $c--white;
+  }
+
+  .sidebar__tagline {
+    margin-top: $spacing-unit/4;
+    color: darken($c--white, 50);
+  }
+
+  .sidebar__nav {
+
+    margin: $spacing-unit*1.5 0;
+
+    li a {
+
+      display: block;
+      width: 100%;
+      color: $c--light-grey;
+      border-left: 6px solid $c--dark-green;
+      background: $c--dark-blue;
+      line-height: $spacing-unit*3;
+      font-size: 20px;
+      margin-bottom: $spacing-unit/3;
+
+      &.is-current,
+      &:hover,
+      &:focus {
+        border-left-color: $c--bright-green;
+        color: $c--white;
+        background: $c--light-grey;
+      }
+
+    }
+
+  }
+
+  .sidebar__social-media {
+    margin-bottom: $spacing-unit/2;
+
+    .i {
+      font-size: 45px;
+      color: darken($c--white, 10);
+      margin: 0 4px;
+    }
+
+    a:hover i {
+      @include linear-gradient(90deg, white 0%, white 95%, $c--black 100%);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    a:hover .i-linkedin {
+      color: $c--social-linkedin;
+    }
+
+    a:hover .i-facebook {
+      color: $c--social-facebook;
+    }
+
+    a:hover .i-twitter {
+      color: $c--social-twitter;
+    }
+
+    a:hover .i-github {
+      color: $c--social-github;
+    }
+
+    a:hover .i-steam {
+      color: $c--social-steam;
+    }
+
+  }
+
+  .sidebar__copyright {
+    color: darken($c--white, 50);
+    margin-bottom: $spacing-unit/2;
+  }
+
+}

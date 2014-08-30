@@ -1,0 +1,72 @@
+{
+    "name": "flexpress/framework",
+    "license": "MIT",
+    "type": "project",
+    "description": "Framework for WordPress",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "3.9.2",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/3.9.2.zip"
+                },
+                "require": {
+                    "fancyguy/webroot-installer": "1.1.0"
+                }
+            }
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "rm -rf ./public_html/wp/{wp-content,license.txt,readme.html,wp-config-sample.php}",
+            "curl https://api.wordpress.org/secret-key/1.1/salt/ >> ./config/salts.php"
+        ]
+    },
+    "require": {
+        "php": ">=5.4",
+        "wordpress": "3.9.2",
+        "fancyguy/webroot-installer": "1.1.*",
+        "wpackagist-plugin/better-wp-security": "4.3.*",
+        "wpackagist-plugin/timber-library": "0.20.*",
+        "wpackagist-plugin/advanced-custom-fields": "4.3.*",
+        "wpackagist-plugin/tinymce-advanced": "4.0.*",
+        "symfony/http-foundation": "2.5.*",
+        "pimple/pimple": "2.0.*",
+        "flexpress/component-acf": "1.0.*",
+        "flexpress/component-controller": "1.0.*",
+        "flexpress/component-hooks": "1.0.*",
+        "flexpress/component-post-type": "1.0.*",
+        "flexpress/component-routing": "1.0.*",
+        "flexpress/component-shortcode": "1.0.*",
+        "flexpress/component-taxonomy": "1.0.*",
+        "flexpress/component-templating": "1.0.*",
+        "flexpress/component-theme": "1.0.*",
+        "flexpress/component-search": "1.0.*",
+        "flexpress/component-layout": "1.0.*",
+        "flexpress/component-image-size": "1.0.*",
+        "flexpress/component-orm": "1.0.*",
+        "flexpress/component-menu": "1.0.*"
+
+    },
+    "extra": {
+        "webroot-dir": "public_html/wp",
+        "webroot-package": "wordpress",
+        "installer-paths": {
+            "public_html/content/themes/{$name}/": ["type:wordpress-theme"],
+            "public_html/content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "TimPerry\\Theme\\": "public_html/content/themes/TimPerry/src/TimPerry/Theme"
+        }
+    }
+}

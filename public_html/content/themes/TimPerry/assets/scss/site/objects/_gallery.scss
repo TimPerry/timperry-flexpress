@@ -1,0 +1,36 @@
+.gallery {
+
+  position: relative;
+  padding: $spacing-unit;
+  background: $c--white;
+  margin-top: $spacing-unit;
+  border-left: 4px solid $c--bright-green;
+
+  .gallery__title {
+    margin: 0;
+    margin-bottom: $spacing-unit/3;
+    margin-left: 4px;
+    margin-top: -8px;
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $c--dark-grey;
+  }
+
+  .gallery__image {
+    display: inline-block;
+    margin: $spacing-unit/4;
+    width: 154px;
+    height: auto;
+  }
+
+  .gallery__total {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $c--bright-green;
+    color: $c--white;
+    padding: $spacing-unit/3 $spacing-unit/2;
+  }
+
+}

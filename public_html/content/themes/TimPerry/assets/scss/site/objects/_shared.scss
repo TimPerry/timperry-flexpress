@@ -1,0 +1,39 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+
+  @include mq($from: desktop) {
+    display: flex;
+  }
+
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: $c--very-light-grey;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.wrap {
+  padding: $spacing-unit;
+
+  @include mq($from: desktop) {
+    width: 660px;
+  }
+
+  @include mq($from: wide) {
+    width: 960px;
+  }
+
+}
+
+.page-title {
+  width: 100%;
+  font-size: 32px;
+  color: $c--white;
+  background: $c--bright-green;
+  padding: $spacing-unit/2 $spacing-unit/1.5;
+  text-transform: uppercase;
+}

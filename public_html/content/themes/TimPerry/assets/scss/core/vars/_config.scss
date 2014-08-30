@@ -1,0 +1,10 @@
+$spacing-unit: 24px;
+
+$mq-responsive: true;
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+);
+$mq-static-breakpoint: desktop;

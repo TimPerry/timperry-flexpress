@@ -1,0 +1,90 @@
+.article {
+  @include clearfix;
+
+  position: relative;
+  border-left: 4px solid $c--bright-green;
+  margin: $spacing-unit/2 0;
+  padding: $spacing-unit;
+  padding-right: 120px;
+  padding-bottom: $spacing-unit/2;
+  background: $c--white;
+
+  .article__thumbnail {
+    float: left;
+    margin-right: $spacing-unit;
+    display: none;
+
+    @include mq($from: tablet) {
+      display: block;
+    }
+  }
+
+  .article__title {
+    margin: 0;
+    margin-bottom: $spacing-unit/3;
+    font-size: 26px;
+    font-weight: normal;
+  }
+
+  .article__terms {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: $spacing-unit/4;
+
+    dl, dt {
+      margin: 0;
+    }
+
+    dt {
+      float: left;
+      margin-right: $spacing-unit/4;
+    }
+
+  }
+
+  .article__excerpt {
+    font-size: 14px;
+  }
+
+  .article__date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $c--bright-green;
+    color: $c--white;
+    padding: $spacing-unit/3 $spacing-unit/2;
+  }
+
+}
+
+.article--full {
+
+  @include outer-container();
+  padding-right: $spacing-unit;
+
+  .article--full__date {
+    background: $c--bright-green;
+    color: $c--white;
+    padding: $spacing-unit/2;
+    width: 100%;
+    display: block;
+  }
+
+  .article--full__side {
+    margin-bottom: $spacing-unit;
+  }
+
+  @include mq($from: tablet) {
+
+    .article--full__side {
+      @include span-columns(4)
+    }
+
+    .article--full__content {
+      @include span-columns(8);
+      @include omega();
+    }
+
+  }
+
+}

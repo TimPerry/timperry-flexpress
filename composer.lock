@@ -1,0 +1,705 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "fb7401f282c26008122ae410640e59c0",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "shasum": ""
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2014-08-18 20:00:12"
+        },
+        {
+            "name": "fancyguy/webroot-installer",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fancyguy/webroot-installer.git",
+                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fancyguy/webroot-installer/zipball/a2d5c2e149d837e5580a62a91d3c91577aa30d28",
+                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28",
+                "shasum": ""
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "FancyGuy\\Composer\\WebrootInstaller"
+            },
+            "autoload": {
+                "psr-0": {
+                    "FancyGuy\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Buzonas",
+                    "email": "steve@fancyguy.com",
+                    "homepage": "http://www.stevebuzonas.com"
+                }
+            ],
+            "description": "A composer installer for libraries that live in an application webroot.",
+            "homepage": "http://fancyguy.github.com/webroot-installer/",
+            "time": "2013-03-15 17:51:14"
+        },
+        {
+            "name": "flexpress/component-acf",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-acf.git",
+                "reference": "17a7b1c9503d6dfbe6f78e6cf8812157473e0550"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-acf/zipball/17a7b1c9503d6dfbe6f78e6cf8812157473e0550",
+                "reference": "17a7b1c9503d6dfbe6f78e6cf8812157473e0550",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\ACF\\": "src/FlexPress/Components/ACF/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Advanced Custom Fields helper for WordPress",
+            "time": "2014-08-13 11:17:55"
+        },
+        {
+            "name": "flexpress/component-controller",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-controller.git",
+                "reference": "df016bb23803443e46ffb86e792e4fbb96ae7d6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-controller/zipball/df016bb23803443e46ffb86e792e4fbb96ae7d6c",
+                "reference": "df016bb23803443e46ffb86e792e4fbb96ae7d6c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Controller\\": "src/FlexPress//Components/Controller/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Controller component for WordPress",
+            "time": "2014-08-13 16:19:45"
+        },
+        {
+            "name": "flexpress/component-hooks",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-hooks.git",
+                "reference": "2e7878dd31df5282b3ee04ddc08161b6ab523125"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-hooks/zipball/2e7878dd31df5282b3ee04ddc08161b6ab523125",
+                "reference": "2e7878dd31df5282b3ee04ddc08161b6ab523125",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Hooks\\": "src/FlexPress/Components/Hooks/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Hook system helper for WordPress",
+            "time": "2014-08-13 13:19:59"
+        },
+        {
+            "name": "flexpress/component-image-size",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-image-size.git",
+                "reference": "ded7a36b927ead60d02d45029d6de013734fa2ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-image-size/zipball/ded7a36b927ead60d02d45029d6de013734fa2ce",
+                "reference": "ded7a36b927ead60d02d45029d6de013734fa2ce",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\ImageSize\\": "src/FlexPress/Components/ImageSize/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Image sizes helper for forWordPress",
+            "time": "2014-08-13 15:22:07"
+        },
+        {
+            "name": "flexpress/component-layout",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-layout.git",
+                "reference": "5a529599024851e0ba0584e86cb2c5c97282e8c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-layout/zipball/5a529599024851e0ba0584e86cb2c5c97282e8c7",
+                "reference": "5a529599024851e0ba0584e86cb2c5c97282e8c7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Layouts\\": "src/FlexPress/Components/Layouts/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Layouts system using ACF for WordPress",
+            "time": "2014-08-21 08:32:51"
+        },
+        {
+            "name": "flexpress/component-menu",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-menu.git",
+                "reference": "36d427590e33147dd42f2f2124986588b43bb011"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-menu/zipball/36d427590e33147dd42f2f2124986588b43bb011",
+                "reference": "36d427590e33147dd42f2f2124986588b43bb011",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Menu\\": "src/FlexPress/Components/Menu/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Menus for WordPress",
+            "time": "2014-08-28 09:18:16"
+        },
+        {
+            "name": "flexpress/component-orm",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-orm.git",
+                "reference": "ae427f33d0e6874efb5a59e8598ad3415add4cc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-orm/zipball/ae427f33d0e6874efb5a59e8598ad3415add4cc4",
+                "reference": "ae427f33d0e6874efb5a59e8598ad3415add4cc4",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\ORM\\": "src/FlexPress/Components/ORM/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "ORM system WordPress",
+            "time": "2014-08-28 10:42:15"
+        },
+        {
+            "name": "flexpress/component-post-type",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-post-type.git",
+                "reference": "819ac9a58d67402ae6e2cfb7bec5f3f1125cd83f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-post-type/zipball/819ac9a58d67402ae6e2cfb7bec5f3f1125cd83f",
+                "reference": "819ac9a58d67402ae6e2cfb7bec5f3f1125cd83f",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\PostType\\": "src/FlexPress/Components/PostType/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Post type helper for WordPress",
+            "time": "2014-08-13 14:40:57"
+        },
+        {
+            "name": "flexpress/component-routing",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-routing.git",
+                "reference": "c1a0c6f1f4522a54e21ee18a8b24adfc1cc28f56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-routing/zipball/c1a0c6f1f4522a54e21ee18a8b24adfc1cc28f56",
+                "reference": "c1a0c6f1f4522a54e21ee18a8b24adfc1cc28f56",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Routing\\": "src/FlexPress/Components/Routing/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Routes system for WordPress",
+            "time": "2014-08-28 10:47:24"
+        },
+        {
+            "name": "flexpress/component-search",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-search.git",
+                "reference": "7982772b59cd32025c1b27435f0456a1e4b31f8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-search/zipball/7982772b59cd32025c1b27435f0456a1e4b31f8e",
+                "reference": "7982772b59cd32025c1b27435f0456a1e4b31f8e",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/http-foundation": "2.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Search\\": "src/FlexPress/Components/Search/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "WordPress search manager",
+            "time": "2014-08-28 09:19:50"
+        },
+        {
+            "name": "flexpress/component-shortcode",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-shortcode.git",
+                "reference": "d62ac7620e62be521129d3af4635bb7482027d99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-shortcode/zipball/d62ac7620e62be521129d3af4635bb7482027d99",
+                "reference": "d62ac7620e62be521129d3af4635bb7482027d99",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Shortcode\\": "src/FlexPress/Components/Shortcode/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Shortcode helper for WordPress",
+            "time": "2014-08-13 14:50:44"
+        },
+        {
+            "name": "flexpress/component-taxonomy",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-taxonomy.git",
+                "reference": "00054d2577acae99c6aef461c726e035a4ff6413"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-taxonomy/zipball/00054d2577acae99c6aef461c726e035a4ff6413",
+                "reference": "00054d2577acae99c6aef461c726e035a4ff6413",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Taxonomy\\": "src/FlexPress/Components/Taxonomy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Taxonomy helper for WordPress",
+            "time": "2014-08-13 15:01:58"
+        },
+        {
+            "name": "flexpress/component-templating",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-templating.git",
+                "reference": "58d1cdd3cae3bfff41d987f8c8a493e6a6efd9cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-templating/zipball/58d1cdd3cae3bfff41d987f8c8a493e6a6efd9cb",
+                "reference": "58d1cdd3cae3bfff41d987f8c8a493e6a6efd9cb",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Templating\\": "src/FlexPress/Components/Templating/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Advanced Custom Fields helper for WordPress",
+            "time": "2014-08-21 08:36:04"
+        },
+        {
+            "name": "flexpress/component-theme",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-theme.git",
+                "reference": "a6949be1342ac9b994dd37e8b2fb15beb8034b23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-theme/zipball/a6949be1342ac9b994dd37e8b2fb15beb8034b23",
+                "reference": "a6949be1342ac9b994dd37e8b2fb15beb8034b23",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\Theme\\": "src/FlexPress/Components/Theme/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Base theme for WordPress",
+            "time": "2014-08-15 14:21:16"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabpot/Pimple.git",
+                "reference": "f99b3df12991c22463927aa6a18fd9b2212917f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabpot/Pimple/zipball/f99b3df12991c22463927aa6a18fd9b2212917f2",
+                "reference": "f99b3df12991c22463927aa6a18fd9b2212917f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2014-02-10 08:05:32"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "v2.5.3",
+            "target-dir": "Symfony/Component/HttpFoundation",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/HttpFoundation.git",
+                "reference": "53296aa0794ebe1e3880e3f2c68fe10ddad6c3e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/53296aa0794ebe1e3880e3f2c68fe10ddad6c3e3",
+                "reference": "53296aa0794ebe1e3880e3f2c68fe10ddad6c3e3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "classmap": [
+                    "Symfony/Component/HttpFoundation/Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony HttpFoundation Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-08-05 09:00:40"
+        },
+        {
+            "name": "wordpress",
+            "version": "3.9.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/WordPress/WordPress/archive/3.9.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "fancyguy/webroot-installer": "1.1.0"
+            },
+            "type": "webroot"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "4.3.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/advanced-custom-fields": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/better-wp-security",
+            "version": "4.3.11",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/better-wp-security/",
+                "reference": "tags/4.3.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/better-wp-security.4.3.11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/better-wp-security": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/better-wp-security/"
+        },
+        {
+            "name": "wpackagist-plugin/timber-library",
+            "version": "0.20.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/timber-library/",
+                "reference": "tags/0.20.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/timber-library.0.20.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/timber-library": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/timber-library/"
+        },
+        {
+            "name": "wpackagist-plugin/tinymce-advanced",
+            "version": "4.0.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/tinymce-advanced/",
+                "reference": "tags/4.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/tinymce-advanced.4.0.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/tinymce-advanced": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/tinymce-advanced/"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": [
+
+    ]
+}

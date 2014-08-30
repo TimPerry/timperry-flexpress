@@ -1,0 +1,62 @@
+$steam2-font-family: "icons";
+$steam2-value: "\e001";
+$steam2: "icons" "\e001";
+$arrow-left-font-family: "icons";
+$arrow-left-value: "\e007";
+$arrow-left: "icons" "\e007";
+$facebook2-font-family: "icons";
+$facebook2-value: "\e004";
+$facebook2: "icons" "\e004";
+$arrow-right2-font-family: "icons";
+$arrow-right2-value: "\e005";
+$arrow-right2: "icons" "\e005";
+$arrow-right-font-family: "icons";
+$arrow-right-value: "\e006";
+$arrow-right: "icons" "\e006";
+$github5-font-family: "icons";
+$github5-value: "\e003";
+$github5: "icons" "\e003";
+$twitter2-font-family: "icons";
+$twitter2-value: "\e000";
+$twitter2: "icons" "\e000";
+$linkedin-font-family: "icons";
+$linkedin-value: "\e002";
+$linkedin: "icons" "\e002";
+
+@mixin icon-font-family($char) {
+  font-family: nth($char, 1);
+}
+
+@mixin icon-font() {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin icon-content($char) {
+  content: nth($char, 2);
+}
+
+@mixin icon($char) {
+  @include icon-font-family($char);
+  @include icon-font();
+
+  &:before {
+    @include icon-content($char);
+  }
+}
+
+@font-face {
+  font-family: "icons";
+  src:url("./fonts/icons.eot");
+  src:url("./fonts/icons.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/icons.woff") format("woff"),
+    url("./fonts/icons.ttf") format("truetype"),
+    url("./fonts/icons.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
