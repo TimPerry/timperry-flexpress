@@ -7,6 +7,8 @@ use FlexPress\Components\ORM\AbstractORM;
 class Article extends AbstractORM
 {
 
+    public $post_type = 'post';
+
     /**
      *
      * Used to get a comma separated list of the articles tags.

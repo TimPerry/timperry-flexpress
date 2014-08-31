@@ -1,0 +1,21 @@
+{% include 'partials/header.twig' %}
+<h2 class="page-title">Photography</h2>
+
+<section class="gallery">
+
+    {% for category in categories %}
+        <h3 class="gallery__title">{{ category.name }}</h3>
+
+        {% for picture in category.pictures %}
+            <a href="{{ picture.fullUrl }}" class="gallery__image" data-lightbox="lightbox-{{ category.name }}"
+               data-title="{{ picture.title }}">
+                <img src="{{ picture.thumbUrl }}" alt="{{ category.name }}">
+            </a>
+        {% endfor %}
+
+        <div class="gallery__total">{{ category.pictures | length }} images</div>
+
+    {% endfor %}
+
+</section>
+{% include 'partials/footer.twig' %}

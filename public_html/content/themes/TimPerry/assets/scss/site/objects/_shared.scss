@@ -1,11 +1,16 @@
 html, body {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
 
   @include mq($from: desktop) {
-    display: flex;
+    display:flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-align-content: stretch;
+    align-content: stretch;
   }
 
   position: relative;

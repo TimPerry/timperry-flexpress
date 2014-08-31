@@ -1,11 +1,9 @@
 .sidebar {
-
   background-color: $c--black;
   text-align: center;
   padding-bottom: $spacing-unit;
 
   @include mq($from: desktop) {
-    min-height: 877px;
     width: 320px;
   }
 

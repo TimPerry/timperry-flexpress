@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "638a1866934addd435d4060fd033c8a5",
+    "hash": "a7c655a830c47957b8018425d9177a90",
     "packages": [
         {
             "name": "composer/installers",
@@ -260,16 +260,16 @@
         },
         {
             "name": "flexpress/component-menu",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlexPress/component-menu.git",
-                "reference": "36d427590e33147dd42f2f2124986588b43bb011"
+                "reference": "00e60cafd56b89e85542f096e20370932ac56a4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlexPress/component-menu/zipball/36d427590e33147dd42f2f2124986588b43bb011",
-                "reference": "36d427590e33147dd42f2f2124986588b43bb011",
+                "url": "https://api.github.com/repos/FlexPress/component-menu/zipball/00e60cafd56b89e85542f096e20370932ac56a4a",
+                "reference": "00e60cafd56b89e85542f096e20370932ac56a4a",
                 "shasum": ""
             },
             "type": "library",
@@ -280,7 +280,34 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Menus for WordPress",
-            "time": "2014-08-28 09:18:16"
+            "time": "2014-08-31 13:20:05"
+        },
+        {
+            "name": "flexpress/component-metabox",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-metabox.git",
+                "reference": "1d0b928aad001295ac17a539b24c3e97ab8d34c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-metabox/zipball/1d0b928aad001295ac17a539b24c3e97ab8d34c7",
+                "reference": "1d0b928aad001295ac17a539b24c3e97ab8d34c7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Components\\MetaBox\\": "src/FlexPress/Components/MetaBox/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Meta box helper for WordPress",
+            "time": "2014-08-27 09:42:32"
         },
         {
             "name": "flexpress/component-orm",
@@ -305,6 +332,33 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "ORM system WordPress",
             "time": "2014-08-28 10:42:15"
+        },
+        {
+            "name": "flexpress/component-plugin",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/component-plugin.git",
+                "reference": "f27fe56c73d1b366eb3e7bb78a27249979d6eafb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/component-plugin/zipball/f27fe56c73d1b366eb3e7bb78a27249979d6eafb",
+                "reference": "f27fe56c73d1b366eb3e7bb78a27249979d6eafb",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Plugins\\": "src/FlexPress/Plugins/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Base plugin for WordPress plugin creation",
+            "time": "2014-08-26 15:57:54"
         },
         {
             "name": "flexpress/component-post-type",
@@ -476,6 +530,38 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "Base theme for WordPress",
             "time": "2014-08-15 14:21:16"
+        },
+        {
+            "name": "flexpress/plugin-cms",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlexPress/plugin-cms.git",
+                "reference": "1e1a71d502083a5b029473e683a2ed906419498b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlexPress/plugin-cms/zipball/1e1a71d502083a5b029473e683a2ed906419498b",
+                "reference": "1e1a71d502083a5b029473e683a2ed906419498b",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "flexpress/component-hooks": "1.0.*",
+                "flexpress/component-metabox": "1.0.*",
+                "flexpress/component-plugin": "1.0.*",
+                "pimple/pimple": "v2.0.0",
+                "symfony/http-foundation": "*"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "FlexPress\\Plugins\\CMS\\": "src/FlexPress/Plugins/CMS/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Used to make WordPress more of a CMS",
+            "time": "2014-08-28 10:26:48"
         },
         {
             "name": "pimple/pimple",

@@ -27,19 +27,24 @@ class TimPerry extends AbstractTheme
     protected function setupRoutes()
     {
 
-        // Standard search
-        $this->router->addRoute(
-            'searchController',
-            function () {
-                return is_search();
-            }
-        );
-
         // 404
         $this->router->addRoute(
             'pageController@pageNotFoundAction',
             function () {
                 return is_404();
+            }
+        );
+
+        // Photography page
+        $this->router->addRoute(
+            'pageController@photographyAction',
+            function () {
+
+                if ($page = get_page_by_path('/photography')) {
+                    return is_page($page->ID);
+                }
+
+                return false;
             }
         );
 

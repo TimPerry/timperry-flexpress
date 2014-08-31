@@ -30,7 +30,7 @@ class ArticleFeature extends AbstractImageSize
      */
     public function getHeight()
     {
-        return 999;
+        return 164;
     }
 
     /**

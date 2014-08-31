@@ -55,7 +55,8 @@
         "flexpress/component-layout": "1.0.*",
         "flexpress/component-image-size": "1.0.*",
         "flexpress/component-orm": "1.0.*",
-        "flexpress/component-menu": "1.0.*"
+        "flexpress/component-menu": "1.0.*",
+        "flexpress/plugin-cms": "1.0.*"
 
     },
     "extra": {

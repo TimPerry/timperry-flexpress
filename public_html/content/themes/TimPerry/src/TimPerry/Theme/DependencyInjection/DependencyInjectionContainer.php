@@ -2,6 +2,7 @@
 
 namespace TimPerry\Theme\DependencyInjection;
 
+use FlexPress\Components\Menu\PostTypeMenu;
 use FlexPress\Components\Search\QueryBuilders\Text as TextQueryBuilder;
 use TimPerry\Theme\Controllers\FrontPageController;
 use TimPerry\Theme\Controllers\PageController;
@@ -11,7 +12,11 @@ use TimPerry\Theme\Fields\FlexibleLayoutProxy;
 use TimPerry\Theme\ImageSizes\ArticleFeature;
 use TimPerry\Theme\ImageSizes\ArticleThumb;
 use TimPerry\Theme\Models\Article;
+use TimPerry\Theme\Models\Page;
+use TimPerry\Theme\PostTypes\Picture;
 use TimPerry\Theme\Search\ArticleSearchManager;
+use TimPerry\Theme\Taxonomies\PictureCategory;
+use TimPerry\Theme\Templating\Functions\ThePrimaryNav;
 use TimPerry\Theme\TimPerry;
 use FlexPress\Components\Hooks\Hooker;
 use FlexPress\Components\Layouts\Fields\FlexibleLayout;
@@ -121,10 +126,6 @@ class DependencyInjectionContainer extends \Pimple
             return new FrontPageController($c);
         };
 
-        $this['searchController'] = function ($c) {
-            return new SearchController($c);
-        };
-
         $this['singleController'] = function ($c) {
             return new SingleController($c);
         };
@@ -189,7 +190,6 @@ class DependencyInjectionContainer extends \Pimple
     protected function addLayoutConfigs()
     {
 
-
         $this["layoutController"] = function ($c) {
             return new LayoutController(array( // Add your layouts here
             ));
@@ -212,7 +212,11 @@ class DependencyInjectionContainer extends \Pimple
     {
 
         $this['articleModelWithGlobalPost'] = function () {
-            return new Article($GLOBALS['post']);
+            return new Article(get_post());
+        };
+
+        $this['pageModelWithGlobalPost'] = function () {
+            return new Page(get_post());
         };
 
     }
@@ -226,7 +230,9 @@ class DependencyInjectionContainer extends \Pimple
      */
     protected function addPostTypeConfigs()
     {
-        // TODO: add post type configs
+        $this['picturePostType'] = function () {
+            return new Picture();
+        };
     }
 
     /**
@@ -238,7 +244,9 @@ class DependencyInjectionContainer extends \Pimple
      */
     protected function addTaxonomyConfigs()
     {
-        // TODO: add taxonomy configs
+        $this['pictureCategoryTaxonomy'] = function () {
+            return new PictureCategory();
+        };
     }
 
     /**
@@ -250,7 +258,14 @@ class DependencyInjectionContainer extends \Pimple
      */
     protected function addTemplateFunctionConfigs()
     {
-        // TODO: add twig template function configs
+
+        $this['postTypeMenu'] = function () {
+            return new PostTypeMenu();
+        };
+
+        $this['thePrimaryNavFunction'] = function ($c) {
+            return new ThePrimaryNav($c['postTypeMenu']);
+        };
     }
 
     /**
@@ -320,25 +335,25 @@ class DependencyInjectionContainer extends \Pimple
         };
 
         $this['templatingFunctions'] = function ($c) {
-            return new TemplatingFunctions($c['objectStorage'], array());
+            return new TemplatingFunctions($c['objectStorage'], array(
+                $c['thePrimaryNavFunction']
+            ));
         };
 
         $this['taxonomyHelper'] = function ($c) {
-            return new TaxonomyHelper($c['objectStorage'], array());
+            return new TaxonomyHelper($c['objectStorage'], array(
+                $c['pictureCategoryTaxonomy']
+            ));
         };
 
         $this['postTypeHelper'] = function ($c) {
-            return new PostTypeHelper($c['objectStorage'], array());
+            return new PostTypeHelper($c['objectStorage'], array(
+                $c['picturePostType']
+            ));
         };
 
         $this['ACFHelper'] = function ($c) {
-            return new ACFHelper($c['objectStorage'], $c['objectStorage'], array(), array(
-                /**
-                 * enable this if you want to use the layouts functionality, you will also
-                 * need to install the advanced custom fields flexible fields plugin
-                 */
-                //$c["flexibleLayoutProxy"]
-            ));
+            return new ACFHelper($c['objectStorage'], $c['objectStorage'], array(), array());
         };
 
         $this['shortcodeHelper'] = function ($c) {

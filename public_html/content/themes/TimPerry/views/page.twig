@@ -1,0 +1,7 @@
+{% include 'partials/header.twig' %}
+<h2 class="page-title">{{ page.thePostTitle() }}</h2>
+
+<article class="article article--full">
+    {{ page.thePostContent() }}
+</article>
+{% include 'partials/footer.twig' %}

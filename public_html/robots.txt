@@ -1,0 +1,1 @@
+User-Agent: *Disallow: /User-Agent: googlebotUser-Agent: bingbotUser-Agent: SlurpDisallow: /Allow: /wp-content/uploads/*Allow: /$Allow: /contact/*Allow: /about/*Allow: /photography/*Allow: /2013/*Allow: /2014/*

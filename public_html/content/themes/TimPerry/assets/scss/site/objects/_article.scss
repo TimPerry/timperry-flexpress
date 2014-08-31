@@ -26,7 +26,7 @@
     font-weight: normal;
 
     a {
-      color: $c--black;
+      color: lighten($c--black, 5);
     }
 
     a:hover {
