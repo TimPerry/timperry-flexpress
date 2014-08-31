@@ -24,6 +24,15 @@
     margin-bottom: $spacing-unit/3;
     font-size: 26px;
     font-weight: normal;
+
+    a {
+      color: $c--black;
+    }
+
+    a:hover {
+      color: $c--bright-green;
+    }
+
   }
 
   .article__terms {

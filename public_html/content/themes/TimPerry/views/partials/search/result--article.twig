@@ -1,7 +1,7 @@
 <article class="articles__article article">
     {% set thumbnail = article.getFeaturedImage('Article Thumb', {class: "article__thumbnail"}) %}
     {% if thumbnail %}
-        {{ thumbnail }}
+        <a href="{{ article.thePermalink() }}">{{ thumbnail }}</a>
     {% endif %}
 
     <h1 class="article__title"><a href="{{ article.thePermalink() }}">{{ article.thePostTitle() }}</a></h1>

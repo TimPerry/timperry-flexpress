@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e2ec948c993d5b496fa926f2cb12915d",
+    "hash": "638a1866934addd435d4060fd033c8a5",
     "packages": [
         {
             "name": "composer/installers",
@@ -660,6 +660,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/better-wp-security/"
+        },
+        {
+            "name": "wpackagist-plugin/syntaxhighlighter",
+            "version": "3.1.10",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/syntaxhighlighter/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/syntaxhighlighter.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/syntaxhighlighter": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/syntaxhighlighter/"
         },
         {
             "name": "wpackagist-plugin/timber-library",

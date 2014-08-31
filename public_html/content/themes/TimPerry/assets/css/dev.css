@@ -401,22 +401,28 @@ a:focus {
     margin-bottom: 8px;
     font-size: 26px;
     font-weight: normal; }
-  /* line 29, ../scss/site/objects/_article.scss */
+    /* line 28, ../scss/site/objects/_article.scss */
+    .article .article__title a {
+      color: #191b1f; }
+    /* line 32, ../scss/site/objects/_article.scss */
+    .article .article__title a:hover {
+      color: #96c348; }
+  /* line 38, ../scss/site/objects/_article.scss */
   .article .article__terms {
     font-size: 14px;
     margin: 0;
     margin-bottom: 6px; }
-    /* line 34, ../scss/site/objects/_article.scss */
+    /* line 43, ../scss/site/objects/_article.scss */
     .article .article__terms dl, .article .article__terms dt {
       margin: 0; }
-    /* line 38, ../scss/site/objects/_article.scss */
+    /* line 47, ../scss/site/objects/_article.scss */
     .article .article__terms dt {
       float: left;
       margin-right: 6px; }
-  /* line 45, ../scss/site/objects/_article.scss */
+  /* line 54, ../scss/site/objects/_article.scss */
   .article .article__excerpt {
     font-size: 14px; }
-  /* line 49, ../scss/site/objects/_article.scss */
+  /* line 58, ../scss/site/objects/_article.scss */
   .article .article__date {
     position: absolute;
     top: 0;
@@ -425,7 +431,7 @@ a:focus {
     color: #fafafa;
     padding: 8px 12px; }
 
-/* line 60, ../scss/site/objects/_article.scss */
+/* line 69, ../scss/site/objects/_article.scss */
 .article--full {
   max-width: 68em;
   margin-left: auto;
@@ -436,18 +442,18 @@ a:focus {
     content: "";
     display: table;
     clear: both; }
-  /* line 65, ../scss/site/objects/_article.scss */
+  /* line 74, ../scss/site/objects/_article.scss */
   .article--full .article--full__date {
     background: #96c348;
     color: #fafafa;
     padding: 12px;
     width: 100%;
     display: block; }
-  /* line 73, ../scss/site/objects/_article.scss */
+  /* line 82, ../scss/site/objects/_article.scss */
   .article--full .article--full__side {
     margin-bottom: 24px; }
   @media all and (min-width: 46.25em) {
-    /* line 79, ../scss/site/objects/_article.scss */
+    /* line 88, ../scss/site/objects/_article.scss */
     .article--full .article--full__side {
       float: left;
       display: block;
@@ -456,7 +462,7 @@ a:focus {
       /* line 38, ../scss/vendor/neat/grid/_span-columns.scss */
       .article--full .article--full__side:last-child {
         margin-right: 0; }
-    /* line 83, ../scss/site/objects/_article.scss */
+    /* line 92, ../scss/site/objects/_article.scss */
     .article--full .article--full__content {
       float: left;
       display: block;

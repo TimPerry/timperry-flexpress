@@ -29,4 +29,9 @@ class Article extends AbstractORM
         return get_the_term_list($this->ID, "post_tag", "", ", ");
     }
 
+    public function thePostContent()
+    {
+        echo apply_filters('the_content', $this->getPostContent());
+    }
+
 }
