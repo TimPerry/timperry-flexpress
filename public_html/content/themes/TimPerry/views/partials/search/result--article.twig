@@ -6,10 +6,17 @@
 
     <h1 class="article__title"><a href="{{ article.thePermalink() }}">{{ article.thePostTitle() }}</a></h1>
     <dl class="article__terms">
+        {% set tagList = article.getTagList() %}
+        {% if tagList %}
         <dt>Tags:</dt>
-        <dd>{{ article.getTagList() }}</dd>
+        <dd>{{ tagList }}</dd>
+        {% endif %}
+
+        {% set catList = article.getCategoryList() %}
+        {% if catList %}
         <dt>Categories:</dt>
-        <dd>{{ article.getCategoryList() }}</dd>
+        <dd>{{ catList }}</dd>
+        {% endif %}
     </dl>
     {% set excerpt = article.getPostExcerpt() %}
     {% if excerpt %}
