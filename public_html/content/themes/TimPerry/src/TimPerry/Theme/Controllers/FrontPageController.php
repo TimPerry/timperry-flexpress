@@ -16,6 +16,9 @@ class FrontPageController extends AbstractBaseController
     public function indexAction($request)
     {
         $context = $this->getContext();
+        $context['articleSearchManager'] = $this->dic['articleSearchManager'];
+        $context['articleSearchManager']->processSearch();
+
         $this->render('front-page.twig', $context);
     }
 }

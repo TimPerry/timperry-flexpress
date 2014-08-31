@@ -8,6 +8,10 @@ use TimPerry\Theme\Controllers\PageController;
 use TimPerry\Theme\Controllers\SearchController;
 use TimPerry\Theme\Controllers\SingleController;
 use TimPerry\Theme\Fields\FlexibleLayoutProxy;
+use TimPerry\Theme\ImageSizes\ArticleFeature;
+use TimPerry\Theme\ImageSizes\ArticleThumb;
+use TimPerry\Theme\Models\Article;
+use TimPerry\Theme\Search\ArticleSearchManager;
 use TimPerry\Theme\TimPerry;
 use FlexPress\Components\Hooks\Hooker;
 use FlexPress\Components\Layouts\Fields\FlexibleLayout;
@@ -164,7 +168,15 @@ class DependencyInjectionContainer extends \Pimple
      */
     protected function addImageSizeConfigs()
     {
-        // TODO: add image size configs
+
+        $this["articleThumbImageSize"] = function () {
+            return new ArticleThumb();
+        };
+
+        $this["articleFeatureImageSize"] = function () {
+            return new ArticleFeature();
+        };
+
     }
 
     /**
@@ -198,7 +210,11 @@ class DependencyInjectionContainer extends \Pimple
      */
     protected function addModelConfigs()
     {
-        // TODO: add model configs
+
+        $this['articleModelWithGlobalPost'] = function () {
+            return new Article($GLOBALS['post']);
+        };
+
     }
 
     /**
@@ -269,6 +285,10 @@ class DependencyInjectionContainer extends \Pimple
             ));
         };
 
+        $this['articleSearchManager'] = function ($c) {
+            return new ArticleSearchManager($c['databaseAdapter'], $c['queue'], $c['request'], array());
+        };
+
     }
 
     /**
@@ -326,7 +346,10 @@ class DependencyInjectionContainer extends \Pimple
         };
 
         $this['imageSizeHelper'] = function ($c) {
-            return new ImageSizeHelper($c['objectStorage'], array());
+            return new ImageSizeHelper($c['objectStorage'], array(
+                $c["articleThumbImageSize"],
+                $c["articleFeatureImageSize"]
+            ));
         };
 
         $this['TimPerry'] = function ($c) {

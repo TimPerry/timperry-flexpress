@@ -8,22 +8,24 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ template_uri }}/assets/css/dev.css?v=1.0.0"/>
 
+    {{ wp_head() }}
+
 </head>
 <body>
 
-<aside class="sidebar">
-    <img src="{{ template_uri }}/assets/img/timperry.svg" class="sidebar__logo"/>
+<header class="sidebar">
+    <a href="/"><img src="{{ template_uri }}/assets/img/timperry.svg" class="sidebar__logo"/></a>
 
     <h1 class="sidebar__title">Tim Perry</h1>
 
     <p class="sidebar__tagline">Software Engineer</p>
     <nav class="sidebar__nav primary-nav">
-        <ol>
-            <li><a href="#" class="is-current">BLOG</a></li>
+        <ul>
+            <li><a href="/" class="is-current">BLOG</a></li>
             <li><a href="#">PHOTOGRAPHY</a></li>
             <li><a href="#">CONTACT</a></li>
             <li><a href="#">ABOUT</a></li>
-        </ol>
+        </ul>
     </nav>
     <div class="sidebar__social-media">
         <a href="http://lnkd.in/SxF9TR" target="_blank"><i class="i i-linkedin"></i></a>
@@ -33,6 +35,6 @@
         <a href="http://steamcommunity.com/id/admintimmy" target="_blank"><i class="i i-steam"></i></a>
     </div>
     <small class="sidebar__copyright">timperry.co.uk 2014</small>
-</aside>
+</header>
 <main class="content">
     <div class="wrap">

@@ -1,0 +1,19 @@
+<article class="articles__article article">
+    {% set thumbnail = article.getFeaturedImage('Article Thumb', {class: "article__thumbnail"}) %}
+    {% if thumbnail %}
+        {{ thumbnail }}
+    {% endif %}
+
+    <h1 class="article__title"><a href="{{ article.thePermalink() }}">{{ article.thePostTitle() }}</a></h1>
+    <dl class="article__terms">
+        <dt>Tags:</dt>
+        <dd>{{ article.getTagList() }}</dd>
+        <dt>Categories:</dt>
+        <dd>{{ article.getCategoryList() }}</dd>
+    </dl>
+    {% set excerpt = article.getPostExcerpt() %}
+    {% if excerpt %}
+    <p class="article__excerpt">{{ excerpt }}, <a href="{{ article.thePermalink() }}">continue reading...</a></p>
+    {% endif %}
+    <time class="article__date" datetime="{{ article.theFormattedPostDate("c") }}">{{ article.theFormattedPostDate("d/m/Y") }}</time>
+</article>

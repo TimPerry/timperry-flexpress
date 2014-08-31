@@ -18,7 +18,9 @@ class SingleController extends AbstractBaseController
     {
 
         $context = $this->getContext();
-        $this->render('single.html.twig', $context);
+        $context['article'] = $this->dic['articleModelWithGlobalPost'];
+
+        $this->render('single.twig', $context);
 
     }
 }

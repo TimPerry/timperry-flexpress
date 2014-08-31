@@ -1,3 +1,4 @@
+.sass-cache*
 .htaccess
 public_html/wp
 public_html/content/uploads

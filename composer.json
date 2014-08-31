@@ -34,6 +34,7 @@
         "php": ">=5.4",
         "wordpress": "3.9.2",
         "fancyguy/webroot-installer": "1.1.*",
+        "wpackagist-plugin/ajax-thumbnail-rebuild": "1.12",
         "wpackagist-plugin/better-wp-security": "4.3.*",
         "wpackagist-plugin/timber-library": "0.20.*",
         "wpackagist-plugin/advanced-custom-fields": "4.3.*",

@@ -1,0 +1,12 @@
+{% if searchManager.requiresPagination() %}
+    <div class="articles__pagination pagination">
+        {% if searchManager.hasPreviousPages() %}
+            <a href="{{ searchManager.thePreviousPageLink() }}" class="pagination__prev pagination-link"><i
+                        class="i i-arrow-left"></i>Previous Page</a>
+        {% endif %}
+        {% if searchManager.hasMorePages() %}
+            <a href="{{ searchManager.theNextPageLink() }}" class="pagination__next pagination-link">Next Page<i
+                        class="i i-arrow-right"></i></a>
+        {% endif %}
+    </div>
+{% endif %}
