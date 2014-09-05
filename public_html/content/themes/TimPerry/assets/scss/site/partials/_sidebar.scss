@@ -4,7 +4,10 @@
   padding-bottom: $spacing-unit;
 
   @include mq($from: desktop) {
-    width: 320px;
+    position: fixed;
+    width: $sidebar-width;
+    top: 0;
+    bottom: 0;
   }
 
   .sidebar__logo {
@@ -23,7 +26,6 @@
   }
 
   .sidebar__nav {
-
     margin: $spacing-unit*1.5 0;
 
     li a {

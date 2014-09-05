@@ -1,35 +1,31 @@
 html, body {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
-
-  @include mq($from: desktop) {
-    display:flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    -webkit-align-content: stretch;
-    align-content: stretch;
-  }
-
   position: relative;
   margin: 0;
   padding: 0;
   background: $c--very-light-grey;
   font-family: 'Open Sans', sans-serif;
+}
 
+@include mq($from: desktop) {
+  .content {
+    margin-left: $sidebar-width;
+  }
 }
 
 .wrap {
   padding: $spacing-unit;
 
   @include mq($from: desktop) {
-    width: 660px;
+    width:80%;
+    max-width: 1050px;
   }
 
-  @include mq($from: wide) {
-    width: 960px;
+  @include mq($from: tablet) {
+    width:100%;
   }
 
 }
