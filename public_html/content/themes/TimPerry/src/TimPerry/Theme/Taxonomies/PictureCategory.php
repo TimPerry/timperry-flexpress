@@ -8,7 +8,7 @@ use TimPerry\Theme\PostTypes\Picture;
 class PictureCategory extends AbstractTaxonomy
 {
 
-    const TAX_NAME = 'picture-category';
+    const TAX_NAME = 'picture-cat';
 
     /**
      * Gets the name of the taxonomy
@@ -26,7 +26,7 @@ class PictureCategory extends AbstractTaxonomy
      */
     public function getSingularName()
     {
-        return "Category";
+        return "Picture Category";
     }
 
     /**
@@ -34,7 +34,7 @@ class PictureCategory extends AbstractTaxonomy
      */
     public function getPluralName()
     {
-        return "Categories";
+        return "Picture Categories";
     }
 
     /**
