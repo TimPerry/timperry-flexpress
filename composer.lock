@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a7c655a830c47957b8018425d9177a90",
+    "hash": "fbd9be792672beca7dee27f8cf792286",
     "packages": [
         {
             "name": "composer/installers",
@@ -311,16 +311,16 @@
         },
         {
             "name": "flexpress/component-orm",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlexPress/component-orm.git",
-                "reference": "ae427f33d0e6874efb5a59e8598ad3415add4cc4"
+                "reference": "34211ff5268add484501b46d92d465ac1929da61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlexPress/component-orm/zipball/ae427f33d0e6874efb5a59e8598ad3415add4cc4",
-                "reference": "ae427f33d0e6874efb5a59e8598ad3415add4cc4",
+                "url": "https://api.github.com/repos/FlexPress/component-orm/zipball/34211ff5268add484501b46d92d465ac1929da61",
+                "reference": "34211ff5268add484501b46d92d465ac1929da61",
                 "shasum": ""
             },
             "type": "library",
@@ -331,20 +331,20 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "ORM system WordPress",
-            "time": "2014-08-28 10:42:15"
+            "time": "2014-09-03 16:29:22"
         },
         {
             "name": "flexpress/component-plugin",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlexPress/component-plugin.git",
-                "reference": "f27fe56c73d1b366eb3e7bb78a27249979d6eafb"
+                "reference": "8ed6c5f1658914dd5843174a694fb37374a36042"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlexPress/component-plugin/zipball/f27fe56c73d1b366eb3e7bb78a27249979d6eafb",
-                "reference": "f27fe56c73d1b366eb3e7bb78a27249979d6eafb",
+                "url": "https://api.github.com/repos/FlexPress/component-plugin/zipball/8ed6c5f1658914dd5843174a694fb37374a36042",
+                "reference": "8ed6c5f1658914dd5843174a694fb37374a36042",
                 "shasum": ""
             },
             "type": "library",
@@ -358,7 +358,7 @@
                 "MIT"
             ],
             "description": "Base plugin for WordPress plugin creation",
-            "time": "2014-08-26 15:57:54"
+            "time": "2014-09-03 16:15:57"
         },
         {
             "name": "flexpress/component-post-type",
@@ -613,17 +613,17 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "53296aa0794ebe1e3880e3f2c68fe10ddad6c3e3"
+                "reference": "cec87359655f901a11de336576851d3957449947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/53296aa0794ebe1e3880e3f2c68fe10ddad6c3e3",
-                "reference": "53296aa0794ebe1e3880e3f2c68fe10ddad6c3e3",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/cec87359655f901a11de336576851d3957449947",
+                "reference": "cec87359655f901a11de336576851d3957449947",
                 "shasum": ""
             },
             "require": {
@@ -662,14 +662,14 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-05 09:00:40"
+            "time": "2014-09-03 09:00:14"
         },
         {
             "name": "wordpress",
-            "version": "3.9.2",
+            "version": "4.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/3.9.2.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -772,15 +772,15 @@
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "0.20.4",
+            "version": "0.20.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/0.20.4"
+                "reference": "tags/0.20.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/timber-library.0.20.4.zip",
+                "url": "http://downloads.wordpress.org/plugin/timber-library.0.20.6.zip",
                 "reference": null,
                 "shasum": null
             },
