@@ -49,7 +49,19 @@ class PageController extends AbstractBaseController
                 "name" => $pictureCategory->name
             );
 
-            $pictures = get_posts(array("post_type" => Picture::POST_TYPE_NAME, "numberposts" => -1));
+            $pictures = get_posts(
+                array(
+                    "post_type" => Picture::POST_TYPE_NAME,
+                    "numberposts" => -1,
+                    "tax_query" => array(
+                        array(
+                            "taxonomy" => PictureCategory::TAX_NAME,
+                            "field" => "slug",
+                            "terms" => $pictureCategory->slug
+                        )
+                    )
+                )
+            );
 
             foreach ($pictures as $picture) {
 
@@ -64,7 +76,6 @@ class PageController extends AbstractBaseController
                 );
 
             }
-
         }
 
         $this->render('page--photography.twig', $context);
