@@ -39,8 +39,14 @@ class ThePrimaryNav implements FunctionInterface
     {
         $args = array(
             "recurse" => false,
-            "starting_level" => 0
+            "starting_level" => 0,
         );
+
+        if (is_archive()
+            || is_single()
+        ) {
+            $args['force_current'] = get_option('page_on_front');
+        }
 
         $this->postTypeMenu->output($args);
     }

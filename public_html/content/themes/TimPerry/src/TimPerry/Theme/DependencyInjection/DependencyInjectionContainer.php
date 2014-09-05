@@ -15,6 +15,8 @@ use TimPerry\Theme\Models\Article;
 use TimPerry\Theme\Models\Page;
 use TimPerry\Theme\PostTypes\Picture;
 use TimPerry\Theme\Search\ArticleSearchManager;
+use TimPerry\Theme\Search\QueryBuilders\PostDate;
+use TimPerry\Theme\Search\QueryBuilders\TermID;
 use TimPerry\Theme\Taxonomies\PictureCategory;
 use TimPerry\Theme\Templating\Functions\ThePrimaryNav;
 use TimPerry\Theme\TimPerry;
@@ -294,6 +296,14 @@ class DependencyInjectionContainer extends \Pimple
             return new TextQueryBuilder();
         };
 
+        $this['termIDQueryBuilder'] = function () {
+            return new TermID();
+        };
+
+        $this['postDateQueryBuilder'] = function () {
+            return new PostDate();
+        };
+
         $this['searchManager'] = function ($c) {
             return new SearchManager($c['databaseAdapter'], $c['queue'], $c['request'], array(
                 $c['textQueryBuilder']
@@ -301,7 +311,10 @@ class DependencyInjectionContainer extends \Pimple
         };
 
         $this['articleSearchManager'] = function ($c) {
-            return new ArticleSearchManager($c['databaseAdapter'], $c['queue'], $c['request'], array());
+            return new ArticleSearchManager($c['databaseAdapter'], $c['queue'], $c['request'], array(
+                $c['termIDQueryBuilder'],
+                $c['postDateQueryBuilder']
+            ));
         };
 
     }

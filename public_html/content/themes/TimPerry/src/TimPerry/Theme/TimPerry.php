@@ -52,7 +52,7 @@ class TimPerry extends AbstractTheme
         $this->router->addRoute(
             'frontPageController',
             function () {
-                return is_front_page();
+                return is_front_page() || is_archive();
             }
         );
 

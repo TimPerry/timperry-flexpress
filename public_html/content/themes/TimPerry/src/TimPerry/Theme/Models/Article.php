@@ -28,7 +28,7 @@ class Article extends AbstractORM
      */
     public function getCategoryList()
     {
-        return get_the_term_list($this->ID, "post_tag", "", ", ");
+        return get_the_term_list($this->ID, "category", "", ", ");
     }
 
     public function thePostContent()

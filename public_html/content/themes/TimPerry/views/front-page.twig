@@ -9,69 +9,17 @@
             <div class="articles__navs articles-nav">
                 <nav class="articles-nav__categories">
                     <h2>Categories</h2>
-                    <ul>
-                        <li class="cat-item cat-item-6"><a
-                                    href="/web/20131218193252/http://www.applicious.co/category/code-2/"
-                                    title="View all posts filed under Code">Code</a>
-                        </li>
-                        <li class="cat-item cat-item-5"><a
-                                    href="/web/20131218193252/http://www.applicious.co/category/news-2/"
-                                    title="View all posts filed under News">News</a>
-                        </li>
-                        <li class="cat-item cat-item-7"><a
-                                    href="/web/20131218193252/http://www.applicious.co/category/photography-2/"
-                                    title="View all posts filed under Photography">Photography</a>
-                        </li>
-                    </ul>
+                    {{ function('wp_list_categories', {"title_li": ""}) }}
                 </nav>
 
                 <nav class="articles-nav__archives">
                     <h2>Blog Archives</h2>
-                    <ul class="archives-list">
-                        <li><a href="/web/20131218193252/http://www.applicious.co/2013/08/">August 2013</a></li>
-                        <li><a href="/web/20131218193252/http://www.applicious.co/2013/06/">June 2013</a></li>
-                        <li><a href="/web/20131218193252/http://www.applicious.co/2013/05/">May 2013</a></li>
-                        <li><a href="/web/20131218193252/http://www.applicious.co/2013/04/">April 2013</a></li>
-                        <li><a href="/web/20131218193252/http://www.applicious.co/2013/01/">January 2013</a></li>
-                        <li><a href="/web/20131218193252/http://www.applicious.co/2012/11/">November 2012</a></li>
-                    </ul>
+                    {{ function('wp_get_archives') }}
                 </nav>
 
                 <nav class="articles-nav__tagcloud">
                     <h2>Tag Cloud</h2>
-
-                    <div class="tag-cloud">
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/bashing/" class="tag-link-17"
-                           title="2 topics"
-                           style="font-size: 12.2pt;">bashing</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/bike/" class="tag-link-9"
-                           title="1 topic"
-                           style="font-size: 8pt;">bike</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/cocos2d/" class="tag-link-13"
-                           title="1 topic"
-                           style="font-size: 8pt;">cocos2d</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/embedded-c/" class="tag-link-16"
-                           title="1 topic" style="font-size: 8pt;">embedded c</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/flowers/" class="tag-link-10"
-                           title="1 topic"
-                           style="font-size: 8pt;">flowers</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/games/" class="tag-link-12"
-                           title="1 topic"
-                           style="font-size: 8pt;">games</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/iop/" class="tag-link-14"
-                           title="7 topics"
-                           style="font-size: 22pt;">iop</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/nginx/" class="tag-link-18"
-                           title="1 topic"
-                           style="font-size: 8pt;">nginx</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/passenger/" class="tag-link-19"
-                           title="1 topic" style="font-size: 8pt;">passenger</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/rant/" class="tag-link-11"
-                           title="1 topic"
-                           style="font-size: 8pt;">rant</a>
-                        <a href="/web/20131218193252/http://www.applicious.co/tag/wordpress/" class="tag-link-15"
-                           title="2 topics" style="font-size: 12.2pt;">Wordpress</a>
-                    </div>
+                    {{ function('wp_tag_cloud') }}
                 </nav>
 
             </div>
