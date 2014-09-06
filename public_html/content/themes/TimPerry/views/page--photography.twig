@@ -8,7 +8,7 @@
             <h3 class="gallery__title">{{ category.name }}</h3>
 
             {% for picture in category.pictures %}
-                <a href="{{ picture.fullUrl }}" class="gallery__image" data-lightbox="lightbox-{{ category.name }}"
+                <a href="{{ picture.largeUrl }}" class="gallery__image" data-lightbox="lightbox-{{ category.name }}"
                    data-title="{{ picture.title }}">
                     <img src="{{ picture.thumbUrl }}" alt="{{ category.name }}">
                 </a>

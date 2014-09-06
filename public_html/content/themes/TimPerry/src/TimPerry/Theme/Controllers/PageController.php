@@ -71,7 +71,7 @@ class PageController extends AbstractBaseController
 
                     "title" => $picture->post_title,
                     "thumbUrl" => $mediaFile['sizes']['Article Thumb'],
-                    "fullUrl" => $mediaFile['url']
+                    "largeUrl" => $mediaFile['sizes']['Large']
 
                 );
 
