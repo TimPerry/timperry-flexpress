@@ -712,10 +712,10 @@ body {
       /* line 13, ../scss/site/partials/_sidebar.scss */
       .sidebar .action-icon {
         display: block;
-        font-size: 60px;
+        font-size: 40px;
         position: absolute;
-        right: 24px;
-        top: 24px; } }
+        right: 12px;
+        top: 12px; } }
   /* line 28, ../scss/site/partials/_sidebar.scss */
   .sidebar .sidebar__logo {
     height: 280px;
@@ -782,39 +782,65 @@ body {
     margin-bottom: 12px; }
 
 @media all and (max-width: 61.24em) {
-  /* line 117, ../scss/site/partials/_sidebar.scss */
-  .sidebar--minimised .action-icon {
-    font-family: "icons";
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    font-size: 80px;
-    top: 12px; }
-    /* line 54, ../scss/site/type/_icons.scss */
-    .sidebar--minimised .action-icon:before {
-      content: "\e002"; }
-  /* line 123, ../scss/site/partials/_sidebar.scss */
-  .sidebar--minimised .sidebar__logo {
-    position: absolute;
-    height: 90px;
-    width: 90px;
-    top: 12px;
-    left: 12px;
-    margin: 0; }
-  /* line 132, ../scss/site/partials/_sidebar.scss */
-  .sidebar--minimised .sidebar__title {
-    color: #fafafa;
-    padding-top: 24px;
-    margin: 0; }
-  /* line 138, ../scss/site/partials/_sidebar.scss */
-  .sidebar--minimised .sidebar__tagline {
-    margin: 0; }
-  /* line 142, ../scss/site/partials/_sidebar.scss */
-  .sidebar--minimised .sidebar__nav,
-  .sidebar--minimised .sidebar__social-media,
-  .sidebar--minimised .sidebar__copyright {
-    display: none; } }
+  /* line 115, ../scss/site/partials/_sidebar.scss */
+  .sidebar--minimised {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0; }
+    /* line 15, ../scss/vendor/bourbon/addons/_clearfix.scss */
+    .sidebar--minimised:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 121, ../scss/site/partials/_sidebar.scss */
+    .sidebar--minimised .action-icon {
+      font-family: "icons";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-right: 0;
+      font-size: 60px; }
+      /* line 54, ../scss/site/type/_icons.scss */
+      .sidebar--minimised .action-icon:before {
+        content: "\e002"; }
+      /* line 38, ../scss/vendor/neat/grid/_span-columns.scss */
+      .sidebar--minimised .action-icon:last-child {
+        margin-right: 0; }
+    /* line 128, ../scss/site/partials/_sidebar.scss */
+    .sidebar--minimised .sidebar__logo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      height: 80px;
+      width: 80px;
+      margin: 12px; }
+      /* line 38, ../scss/vendor/neat/grid/_span-columns.scss */
+      .sidebar--minimised .sidebar__logo:last-child {
+        margin-right: 0; }
+    /* line 135, ../scss/site/partials/_sidebar.scss */
+    .sidebar--minimised .sidebar__title {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-top: 28px;
+      font-size: 32px; }
+      /* line 38, ../scss/vendor/neat/grid/_span-columns.scss */
+      .sidebar--minimised .sidebar__title:last-child {
+        margin-right: 0; }
+    /* line 141, ../scss/site/partials/_sidebar.scss */
+    .sidebar--minimised .sidebar__tagline,
+    .sidebar--minimised .sidebar__nav,
+    .sidebar--minimised .sidebar__social-media,
+    .sidebar--minimised .sidebar__copyright {
+      display: none; } }

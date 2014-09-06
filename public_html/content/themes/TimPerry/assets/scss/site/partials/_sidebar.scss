@@ -17,10 +17,10 @@
 
     @include mq($to: desktop) {
       display: block;
-      font-size: 60px;
+      font-size: 40px;
       position: absolute;
-      right: $spacing-unit;
-      top: $spacing-unit;
+      right: $spacing-unit/2;
+      top: $spacing-unit/2;
     }
 
   }
@@ -114,31 +114,31 @@
 
   .sidebar--minimised {
 
+    @include outer-container();
+
+    padding-bottom: 0;
+
     .action-icon {
       @include icon($menu11);
-      font-size: 80px;
-      top: $spacing-unit/2;
+      @include span-columns(3);
+      @include omega();
+      font-size: 60px;
     }
 
     .sidebar__logo {
-      position: absolute;
-      height: 90px;
-      width: 90px;
-      top: $spacing-unit/2;
-      left: $spacing-unit/2;
-      margin: 0;
+      @include span-columns(3);
+      height: 80px;
+      width: 80px;
+      margin: $spacing-unit/2;
     }
 
     .sidebar__title {
-      color: $c--white;
-      padding-top: $spacing-unit;
-      margin: 0;
+      @include span-columns(6);
+      margin-top: 28px;
+      font-size: 32px;
     }
 
-    .sidebar__tagline {
-      margin: 0;
-    }
-
+    .sidebar__tagline,
     .sidebar__nav,
     .sidebar__social-media,
     .sidebar__copyright {
