@@ -660,20 +660,18 @@ body {
   /* line 14, ../scss/site/objects/_shared.scss */
   .content {
     margin-left: 320px; } }
-/* line 19, ../scss/site/objects/_shared.scss */
-.wrap {
-  padding: 24px; }
-  @media all and (min-width: 61.25em) {
-    /* line 19, ../scss/site/objects/_shared.scss */
-    .wrap {
-      width: 80%;
-      max-width: 1050px; } }
-  @media all and (min-width: 46.25em) {
-    /* line 19, ../scss/site/objects/_shared.scss */
-    .wrap {
-      width: 100%; } }
+@media all and (min-width: 61.25em) {
+  /* line 19, ../scss/site/objects/_shared.scss */
+  .wrap {
+    padding: 24px;
+    width: 80%;
+    max-width: 1050px; } }
+@media all and (min-width: 46.25em) {
+  /* line 19, ../scss/site/objects/_shared.scss */
+  .wrap {
+    width: 100%; } }
 
-/* line 33, ../scss/site/objects/_shared.scss */
+/* line 32, ../scss/site/objects/_shared.scss */
 .page-title {
   width: 100%;
   font-size: 32px;

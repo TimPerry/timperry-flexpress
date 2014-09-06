@@ -17,9 +17,8 @@ body {
 }
 
 .wrap {
-  padding: $spacing-unit;
-
   @include mq($from: desktop) {
+    padding: $spacing-unit;
     width:80%;
     max-width: 1050px;
   }
