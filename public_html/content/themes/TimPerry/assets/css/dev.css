@@ -801,11 +801,12 @@ body {
       line-height: 1;
       -webkit-font-smoothing: antialiased;
       font-size: 60px;
-      margin-top: 6px; }
+      margin-top: 6px;
+      top: 18px; }
       /* line 54, ../scss/site/type/_icons.scss */
       .sidebar--minimised .action-icon:before {
         content: "\e002"; }
-    /* line 130, ../scss/site/partials/_sidebar.scss */
+    /* line 131, ../scss/site/partials/_sidebar.scss */
     .sidebar--minimised .action-text {
       display: block;
       position: absolute;
@@ -815,12 +816,12 @@ body {
       margin-left: -48px;
       color: white;
       font-size: 24px; }
-    /* line 141, ../scss/site/partials/_sidebar.scss */
+    /* line 142, ../scss/site/partials/_sidebar.scss */
     .sidebar--minimised .sidebar__logo {
       height: 80px;
       width: 80px;
       margin: 12px; }
-    /* line 147, ../scss/site/partials/_sidebar.scss */
+    /* line 148, ../scss/site/partials/_sidebar.scss */
     .sidebar--minimised .sidebar__title,
     .sidebar--minimised .sidebar__tagline,
     .sidebar--minimised .sidebar__nav,
