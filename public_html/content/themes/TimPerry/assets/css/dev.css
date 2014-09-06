@@ -597,7 +597,10 @@ a:focus {
     margin: 6px;
     width: 154px;
     height: auto; }
-  /* line 27, ../scss/site/objects/_gallery.scss */
+    /* line 26, ../scss/site/objects/_gallery.scss */
+    .gallery .gallery__image img {
+      border-left: 4px solid #7ba335; }
+  /* line 32, ../scss/site/objects/_gallery.scss */
   .gallery .gallery__total {
     position: absolute;
     top: 0;
