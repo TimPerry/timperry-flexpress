@@ -26,6 +26,14 @@
   @include icon($arrow-right2);
 }
 
+.i-close {
+  @include icon($close);
+}
+
+.i-menu {
+  @include icon($menu11);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin-bottom: $spacing-unit/4;

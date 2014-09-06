@@ -10,6 +10,21 @@
     bottom: 0;
   }
 
+  .action-icon {
+    display: none;
+
+    @include icon($close);
+
+    @include mq($to: desktop) {
+      display: block;
+      font-size: 60px;
+      position: absolute;
+      right: $spacing-unit;
+      top: $spacing-unit;
+    }
+
+  }
+
   .sidebar__logo {
     height: 280px;
     width: 280px;
@@ -91,6 +106,45 @@
   .sidebar__copyright {
     color: darken($c--white, 50);
     margin-bottom: $spacing-unit/2;
+  }
+
+}
+
+@include mq($to: desktop) {
+
+  .sidebar--minimised {
+
+    .action-icon {
+      @include icon($menu11);
+      font-size: 80px;
+      top: $spacing-unit/2;
+    }
+
+    .sidebar__logo {
+      position: absolute;
+      height: 90px;
+      width: 90px;
+      top: $spacing-unit/2;
+      left: $spacing-unit/2;
+      margin: 0;
+    }
+
+    .sidebar__title {
+      color: $c--white;
+      padding-top: $spacing-unit;
+      margin: 0;
+    }
+
+    .sidebar__tagline {
+      margin: 0;
+    }
+
+    .sidebar__nav,
+    .sidebar__social-media,
+    .sidebar__copyright {
+      display: none;
+    }
+
   }
 
 }
