@@ -89,6 +89,11 @@
 
   }
 
+  ul, ol {
+    margin: $spacing-unit;
+    list-style-type: circle;
+  }
+
   @include mq($from: tablet) {
 
     .article--full__side {
