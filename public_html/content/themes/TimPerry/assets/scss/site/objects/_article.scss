@@ -89,6 +89,10 @@
 
   }
 
+  a {
+    text-decoration: underline;
+  }
+
   ul, ol {
     margin: $spacing-unit;
     list-style-type: circle;

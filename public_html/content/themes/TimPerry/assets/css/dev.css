@@ -457,11 +457,14 @@ a:focus {
       width: 100%;
       height: auto; }
   /* line 92, ../scss/site/objects/_article.scss */
+  .article--full a {
+    text-decoration: underline; }
+  /* line 96, ../scss/site/objects/_article.scss */
   .article--full ul, .article--full ol {
     margin: 24px;
     list-style-type: circle; }
   @media all and (min-width: 46.25em) {
-    /* line 99, ../scss/site/objects/_article.scss */
+    /* line 103, ../scss/site/objects/_article.scss */
     .article--full .article--full__side {
       float: left;
       display: block;
@@ -470,7 +473,7 @@ a:focus {
       /* line 38, ../scss/vendor/neat/grid/_span-columns.scss */
       .article--full .article--full__side:last-child {
         margin-right: 0; }
-    /* line 103, ../scss/site/objects/_article.scss */
+    /* line 107, ../scss/site/objects/_article.scss */
     .article--full .article--full__content {
       float: left;
       display: block;
