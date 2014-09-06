@@ -11,7 +11,9 @@ var ui = {
             $sidebar = $(".sidebar"),
             sidebar_minimised_class = "sidebar--minimised";
 
-        $action_icon.click(function () {
+        $action_icon.parent("a").click(function (e) {
+
+            e.preventDefault();
 
             if ($sidebar.hasClass(sidebar_minimised_class)) {
 
