@@ -4,10 +4,11 @@
   padding-bottom: $spacing-unit;
 
   @include mq($from: desktop) {
-    position: fixed;
+    position: absolute;
     width: $sidebar-width;
     top: 0;
     bottom: 0;
+    padding-bottom: $spacing-unit;
   }
 
   .action-icon {
