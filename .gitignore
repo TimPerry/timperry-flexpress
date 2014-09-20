@@ -23,3 +23,5 @@ vagrant*
 node_modules*
 bower_component*
 public_html/robots.txt
+Gemfile.lock
+chromedriver.out
