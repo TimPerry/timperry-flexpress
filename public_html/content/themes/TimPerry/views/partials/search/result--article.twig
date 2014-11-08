@@ -4,7 +4,7 @@
         <a href="{{ article.thePermalink() }}">{{ thumbnail }}</a>
     {% endif %}
 
-    <h1 class="article__title"><a href="{{ article.thePermalink() }}">{{ article.thePostTitle() }}</a></h1>
+    <h3 class="article__title"><a href="{{ article.thePermalink() }}">{{ article.thePostTitle() }}</a></h3>
     <dl class="article__terms">
         {% set tagList = article.getTagList() %}
         {% if tagList %}

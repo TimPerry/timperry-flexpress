@@ -1,7 +1,7 @@
 {% include 'partials/header.twig' %}
         <h2 class="page-title">HOME</h2>
 
-        <section class="articles">
+        <div class="articles">
 
             {{ articleSearchManager.outputResults() }}
             {{ articleSearchManager.outputPagination() }}
@@ -9,12 +9,16 @@
             <div class="articles__navs articles-nav">
                 <nav class="articles-nav__categories">
                     <h2>Categories</h2>
-                    {{ function('wp_list_categories', {"title_li": ""}) }}
+                    <ul>
+                        {{ function('wp_list_categories', {"title_li": ""}) }}
+                    </ul>
                 </nav>
 
                 <nav class="articles-nav__archives">
                     <h2>Blog Archives</h2>
-                    {{ function('wp_get_archives') }}
+                    <ul>
+                        {{ function('wp_get_archives') }}
+                    </ul>
                 </nav>
 
                 <nav class="articles-nav__tagcloud">
@@ -23,5 +27,5 @@
                 </nav>
 
             </div>
-        </section>
+        </div>
 {% include 'partials/footer.twig' %}

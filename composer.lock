@@ -260,16 +260,16 @@
         },
         {
             "name": "flexpress/component-menu",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlexPress/component-menu.git",
-                "reference": "00e60cafd56b89e85542f096e20370932ac56a4a"
+                "reference": "6935a505513651c347ca76b12f5de4eef187d5fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlexPress/component-menu/zipball/00e60cafd56b89e85542f096e20370932ac56a4a",
-                "reference": "00e60cafd56b89e85542f096e20370932ac56a4a",
+                "url": "https://api.github.com/repos/FlexPress/component-menu/zipball/6935a505513651c347ca76b12f5de4eef187d5fc",
+                "reference": "6935a505513651c347ca76b12f5de4eef187d5fc",
                 "shasum": ""
             },
             "type": "library",
@@ -280,7 +280,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Menus for WordPress",
-            "time": "2014-08-31 13:20:05"
+            "time": "2014-11-08 19:33:50"
         },
         {
             "name": "flexpress/component-metabox",
@@ -613,17 +613,17 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v2.5.4",
+            "version": "v2.5.6",
             "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "cec87359655f901a11de336576851d3957449947"
+                "reference": "56111fc8ba8bcad93d367532babecc6ce17f66ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/cec87359655f901a11de336576851d3957449947",
-                "reference": "cec87359655f901a11de336576851d3957449947",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/56111fc8ba8bcad93d367532babecc6ce17f66ce",
+                "reference": "56111fc8ba8bcad93d367532babecc6ce17f66ce",
                 "shasum": ""
             },
             "require": {
@@ -662,7 +662,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-03 09:00:14"
+            "time": "2014-10-24 05:49:22"
         },
         {
             "name": "wordpress",
@@ -772,15 +772,15 @@
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "0.20.6",
+            "version": "0.20.7",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/0.20.6"
+                "reference": "tags/0.20.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/timber-library.0.20.6.zip",
+                "url": "http://downloads.wordpress.org/plugin/timber-library.0.20.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -817,21 +817,13 @@
             "homepage": "http://wordpress.org/plugins/tinymce-advanced/"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
     "prefer-stable": false,
     "platform": {
         "php": ">=5.4"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
