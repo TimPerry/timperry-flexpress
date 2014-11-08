@@ -693,11 +693,12 @@ body {
       top: 0;
       bottom: 0;
       padding-bottom: 24px; } }
-  @media (min-height: 880px) {
+  @media all and (min-width: 61.25em) and (min-height: 880px) {
     /* line 1, ../scss/site/partials/_sidebar.scss */
     .sidebar {
       position: fixed; } }
-  /* line 18, ../scss/site/partials/_sidebar.scss */
+
+  /* line 19, ../scss/site/partials/_sidebar.scss */
   .sidebar .action-icon {
     display: none;
     font-family: "icons";
@@ -712,32 +713,32 @@ body {
     .sidebar .action-icon:before {
       content: "\e006"; }
     @media all and (max-width: 61.24em) {
-      /* line 18, ../scss/site/partials/_sidebar.scss */
+      /* line 19, ../scss/site/partials/_sidebar.scss */
       .sidebar .action-icon {
         display: block;
         font-size: 40px;
         position: absolute;
         right: 12px;
         top: 12px; } }
-  /* line 33, ../scss/site/partials/_sidebar.scss */
+  /* line 34, ../scss/site/partials/_sidebar.scss */
   .sidebar .action-text {
     display: none; }
-  /* line 37, ../scss/site/partials/_sidebar.scss */
+  /* line 38, ../scss/site/partials/_sidebar.scss */
   .sidebar .sidebar__logo {
     height: 280px;
     width: 280px;
     margin-top: 24px; }
-  /* line 43, ../scss/site/partials/_sidebar.scss */
+  /* line 44, ../scss/site/partials/_sidebar.scss */
   .sidebar .sidebar__title {
     color: #fafafa; }
-  /* line 47, ../scss/site/partials/_sidebar.scss */
+  /* line 48, ../scss/site/partials/_sidebar.scss */
   .sidebar .sidebar__tagline {
     margin-top: 6px;
     color: #7a7a7a; }
-  /* line 52, ../scss/site/partials/_sidebar.scss */
+  /* line 53, ../scss/site/partials/_sidebar.scss */
   .sidebar .sidebar__nav {
     margin: 36px 0; }
-    /* line 55, ../scss/site/partials/_sidebar.scss */
+    /* line 56, ../scss/site/partials/_sidebar.scss */
     .sidebar .sidebar__nav li a {
       display: block;
       width: 100%;
@@ -747,53 +748,53 @@ body {
       line-height: 72px;
       font-size: 20px;
       margin-bottom: 8px; }
-      /* line 66, ../scss/site/partials/_sidebar.scss */
+      /* line 67, ../scss/site/partials/_sidebar.scss */
       .sidebar .sidebar__nav li a.is-current, .sidebar .sidebar__nav li a:hover, .sidebar .sidebar__nav li a:focus {
         border-left-color: #96c348;
         color: #fafafa;
         background: #3c444c; }
-  /* line 78, ../scss/site/partials/_sidebar.scss */
+  /* line 79, ../scss/site/partials/_sidebar.scss */
   .sidebar .sidebar__social-media {
     margin-bottom: 12px; }
-    /* line 81, ../scss/site/partials/_sidebar.scss */
+    /* line 82, ../scss/site/partials/_sidebar.scss */
     .sidebar .sidebar__social-media .i {
       font-size: 45px;
       color: #e1e1e1;
       margin: 0 4px; }
-    /* line 87, ../scss/site/partials/_sidebar.scss */
+    /* line 88, ../scss/site/partials/_sidebar.scss */
     .sidebar .sidebar__social-media a:hover i {
       background-color: white;
       background-image: -webkit-linear-gradient(-360deg, white 0%, white 95%, #191b1f 100%);
       background-image: linear-gradient(90deg,white 0%, white 95%, #191b1f 100%);
       border-radius: 15px;
       overflow: hidden; }
-    /* line 93, ../scss/site/partials/_sidebar.scss */
+    /* line 94, ../scss/site/partials/_sidebar.scss */
     .sidebar .sidebar__social-media a:hover .i-linkedin {
       color: #017eb4; }
-    /* line 97, ../scss/site/partials/_sidebar.scss */
+    /* line 98, ../scss/site/partials/_sidebar.scss */
     .sidebar .sidebar__social-media a:hover .i-facebook {
       color: #3b5998; }
-    /* line 101, ../scss/site/partials/_sidebar.scss */
+    /* line 102, ../scss/site/partials/_sidebar.scss */
     .sidebar .sidebar__social-media a:hover .i-twitter {
       color: #5eaade; }
-    /* line 105, ../scss/site/partials/_sidebar.scss */
+    /* line 106, ../scss/site/partials/_sidebar.scss */
     .sidebar .sidebar__social-media a:hover .i-github {
       color: #4183c4; }
-    /* line 109, ../scss/site/partials/_sidebar.scss */
+    /* line 110, ../scss/site/partials/_sidebar.scss */
     .sidebar .sidebar__social-media a:hover .i-steam {
       color: black; }
-  /* line 115, ../scss/site/partials/_sidebar.scss */
+  /* line 116, ../scss/site/partials/_sidebar.scss */
   .sidebar .sidebar__copyright {
     color: #7a7a7a;
     margin-bottom: 12px; }
 
 @media all and (max-width: 61.24em) {
-  /* line 124, ../scss/site/partials/_sidebar.scss */
+  /* line 125, ../scss/site/partials/_sidebar.scss */
   .sidebar--minimised {
     position: relative;
     padding-bottom: 0;
     text-align: left; }
-    /* line 129, ../scss/site/partials/_sidebar.scss */
+    /* line 130, ../scss/site/partials/_sidebar.scss */
     .sidebar--minimised .action-icon {
       font-family: "icons";
       speak: none;
@@ -809,7 +810,7 @@ body {
       /* line 54, ../scss/site/type/_icons.scss */
       .sidebar--minimised .action-icon:before {
         content: "\e002"; }
-    /* line 136, ../scss/site/partials/_sidebar.scss */
+    /* line 137, ../scss/site/partials/_sidebar.scss */
     .sidebar--minimised .action-text {
       display: block;
       position: absolute;
@@ -819,12 +820,12 @@ body {
       margin-left: -48px;
       color: white;
       font-size: 24px; }
-    /* line 147, ../scss/site/partials/_sidebar.scss */
+    /* line 148, ../scss/site/partials/_sidebar.scss */
     .sidebar--minimised .sidebar__logo {
       height: 80px;
       width: 80px;
       margin: 12px; }
-    /* line 153, ../scss/site/partials/_sidebar.scss */
+    /* line 154, ../scss/site/partials/_sidebar.scss */
     .sidebar--minimised .sidebar__title,
     .sidebar--minimised .sidebar__tagline,
     .sidebar--minimised .sidebar__nav,

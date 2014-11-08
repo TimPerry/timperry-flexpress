@@ -9,10 +9,11 @@
     top: 0;
     bottom: 0;
     padding-bottom: $spacing-unit;
-  }
 
-  @media (min-height: 880px) {
-    position: fixed;
+    @media (min-height: 880px) {
+      position: fixed;
+    }
+
   }
 
   .action-icon {
