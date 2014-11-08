@@ -18,6 +18,7 @@ use TimPerry\Theme\Search\ArticleSearchManager;
 use TimPerry\Theme\Search\QueryBuilders\PostDate;
 use TimPerry\Theme\Search\QueryBuilders\TermID;
 use TimPerry\Theme\Taxonomies\PictureCategory;
+use TimPerry\Theme\Templating\Functions\GetEnv;
 use TimPerry\Theme\Templating\Functions\ThePrimaryNav;
 use TimPerry\Theme\TimPerry;
 use FlexPress\Components\Hooks\Hooker;
@@ -268,6 +269,11 @@ class DependencyInjectionContainer extends \Pimple
         $this['thePrimaryNavFunction'] = function ($c) {
             return new ThePrimaryNav($c['postTypeMenu']);
         };
+
+
+        $this['getEnvFunction'] = function () {
+            return new GetEnv();
+        };
     }
 
     /**
@@ -349,7 +355,8 @@ class DependencyInjectionContainer extends \Pimple
 
         $this['templatingFunctions'] = function ($c) {
             return new TemplatingFunctions($c['objectStorage'], array(
-                $c['thePrimaryNavFunction']
+                $c['thePrimaryNavFunction'],
+                $c['getEnvFunction']
             ));
         };
 
