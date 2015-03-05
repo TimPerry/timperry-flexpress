@@ -1,0 +1,66 @@
+{
+    "viewports": [
+        {
+            "name": "mobile",
+            "width": 320,
+            "height": 480
+        },
+        {
+            "name": "tablet",
+            "width": 740,
+            "height": 1110
+        },
+        {
+            "name": "desktop",
+            "width": 980,
+            "height": 1470
+        },
+        {
+            "name": "desktop",
+            "width": 1300,
+            "height": 1950
+        }
+    ],
+    "scenarios": [
+        {
+            "label": "Homepage",
+            "url": "http://www.timperry.co.uk/?timperry-theme-search-articlesearchmanager-filter-page=2",
+            "selectors": [
+                ".sidebar",
+                ".articles",
+                ".articles__navs",
+                ".articles__pagination",
+                ".article:nth-of-type(1)"
+            ]
+        },
+        {
+            "label": "Single article",
+            "url": "http://www.timperry.co.uk/2015/01/2015-365-pic-a-day-project/",
+            "selectors": [
+                ".article:nth-of-type(1)"
+            ]
+        },
+        {
+            "label": "Photography",
+            "url": "http://www.timperry.co.uk/photography/",
+            "selectors": [
+                ".galleries",
+                ".gallery:nth-of-type(1)"
+            ]
+        },
+        {
+            "label": "Contact",
+            "url": "http://www.timperry.co.uk/contact/",
+            "selectors": [
+                ".article:nth-of-type(1)"
+            ]
+        },
+        {
+            "label": "About",
+            "url": "http://www.timperry.co.uk/about/",
+            "selectors": [
+                ".article:nth-of-type(1)"
+            ]
+        }
+    ]
+}
