@@ -30,7 +30,7 @@ class ArticleThumb extends AbstractImageSize
      */
     public function getHeight()
     {
-        return 110;
+        return 220;
     }
 
     /**
@@ -43,6 +43,6 @@ class ArticleThumb extends AbstractImageSize
      */
     public function getWidth()
     {
-        return 164;
+        return 328;
     }
 }
