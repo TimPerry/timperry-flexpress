@@ -18,6 +18,7 @@ abstract class AbstractBaseController extends AbstractTimberController
     protected function getContext()
     {
         $context = \Timber::get_context();
+        $context['template_uri'] = '/content/themes/TimPerry';
         return $context;
     }
 }
